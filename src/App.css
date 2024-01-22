@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+.main-caption {
+    width: 390px;
+    margin: 0 auto 20px;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 600px;
+    padding: 0 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-content-property {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 45%;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content-property > * {
+    flex-basis: 45%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dushnila-mood {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.background-red {
+    background-color: #FF8A7A;
+}
+
+.background-green {
+    background-color: #7AFFA7;
+}
+
+.dushnila-mood-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.content-property-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 15px;
+}
+
+.content-property-img {
+    border-radius: 15px;
+}
+
+.property-story-link {
+    position: relative;
+    transition: 0.5s all;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+}
+
+.property-story-link:before {
+    content: "";
+    transition: 0.5s background-image;
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    height: 15px;
+    background-image: url("./assets/arrow-right.png");
+    background-repeat: no-repeat;
+}
+
+.property-story-link:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.property-story-link:hover:before {
+    background-image: url("./assets/arrow-right-white.png");
+}
+
+
+.dushnila-data {
+    width: 56%;
+    border-radius: 15px;
+}
+
+.dushnila-data > * {
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.background-linear-green {
+    background: linear-gradient(125.57deg, rgba(255, 255, 255, 0) 0%, rgba(0, 255, 87, 0.6) 100%);
+}
+
+.background-linear-red {
+    background: linear-gradient(125.57deg, rgba(255, 255, 255, 0) 0%, rgba(255, 138, 122, 0.6) 100%);
+}
+
+.dushnila-data > *:last-child {
+    margin-bottom: 20px;
+}
+
+.temperature > *, .сarbon > * {
+    margin: 0;
+    padding: 0;
+}
+
+
+.temperature-description,
+.carbon-description {
+    font-size: 100px;
+}
+
+.temperature-caption,
+.carbon-caption {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+/* defautl */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.hidden {
+    position: absolute;
+    z-index: -1;
+    display: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
