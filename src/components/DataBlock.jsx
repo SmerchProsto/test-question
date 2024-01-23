@@ -17,7 +17,7 @@ const DataBlock = () => {
     useEffect(() => {
         downloadData();
         // Установка интервала на 1 минуту (в миллисекундах)
-        const intervalId = setInterval(downloadData, 5000);
+        const intervalId = setInterval(downloadData, 60000);
 
         // Очистка интервала при размонтировании компонента
         return () => clearInterval(intervalId);
