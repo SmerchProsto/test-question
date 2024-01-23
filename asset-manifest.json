@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/test-question/static/css/main.a44e478a.css",
+    "main.js": "/test-question/static/js/main.f5938752.js",
+    "static/media/dev.jpg": "/test-question/static/media/dev.095d527d44379eae300b.jpg",
+    "index.html": "/test-question/index.html",
+    "main.a44e478a.css.map": "/test-question/static/css/main.a44e478a.css.map",
+    "main.f5938752.js.map": "/test-question/static/js/main.f5938752.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a44e478a.css",
+    "static/js/main.f5938752.js"
+  ]
+}
